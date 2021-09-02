@@ -1,0 +1,58 @@
+h1{
+	color: #ffff;
+	font-size:3.5rem;
+	font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+p{
+	color: #ffff;
+	font-size: 2.20rem;
+	padding-top:25px;
+	padding-left: 10px;
+	font-family: 'Alumni Sans', sans-serif; 
+}
+
+#heading{
+	padding-top: 55px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+}
+
+h2{
+	text-align: center;
+	font-family: 'Libre Baskerville', serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#button1{
+	text-align: center;
+	padding-top: 20px;
+}
+
+h3{
+	color: #ffff;
+}
+
+.bottom-container {
+  background-color: #ffff;
+  padding: 50px 0 20px;
+}
+
+.footer-link{
+	padding-left: 30px;
+	padding-right:30px;
+	padding-top: 10px;
+	color: #11052C;
+}
+
+#copyright {
+  color: #11052C;
+  font-size: 0.95rem;
+  padding: 20px 0;
+}
+
+h3{
+	color: #ffff;
+	text-align: center;
+	
+}

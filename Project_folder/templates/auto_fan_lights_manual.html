@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href = "../static/css/style.css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">  
+    <title>Automator</title>
+  </head>
+  <body class = "bg-dark">
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+	<nav class = "navbar fixed-top bg-dark navbar-expand-lg navbar-dark">
+		<a class = "navbar-brand ms-3" href = "">Eclipse</a>
+		
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+			<ul class = "navbar-nav ms-auto">
+				<li class = "nav-item">
+					<a class = "nav-link" href = "">Contact</a>
+				</li>
+				
+				<li class = "nav-item">
+					<a class = "nav-link" href = "">Collaborate</a>
+				</li>
+				
+				<li class = "nav-item">
+					<a class = "nav-link" href = "">Documentation</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section id = "heading">
+	<div class = "row">
+		<div class = "col-lg-6 col-md-12 col-sm-12">
+			<h1>Eclipse,<br>The smart home system</h1>
+  		</div>
+		<div class = "col-lg-6 col-md-12 col-sm-12">
+			<p>This system is designed for house hold automation. Control your home just by lying on your bed.</p>
+		</div>
+	</div>
+	</section>
+	<section class = "bg-dark" id = "button1">
+	<div class = "row" style = "padding-bottom: 20px">
+		<div class = "col">
+			<h3>Lights Section :</h3>
+		</div>
+	</div>
+	<div class = "Lights">
+        	<a class = "btn btn-dark btn-lg btn-outline-light" role = "button" href = "/auto_fan_lights_manual">Lights Status: {{Lights}}</a>
+        </div>
+	<div class = "Lights-auto" style = "padding-top: 10px">
+        	<a class = "btn btn-light btn-lg btn-outline-dark" role = "button" href = "/auto_lights" style = "bg-color: #ffff;">Automation Status: {{Auto_stat}}</a>
+        </div>
+	</section>
+	<hr>
+	<section class = "bg-dark" id = "button1">
+        <div class = "row" style = "padding-bottom: 20px">
+                <div class = "col">
+                        <h3>Fan Section :</h3>
+                </div>
+        </div>
+        <div class = "fan">
+                <h3>Manual controls are not available. Fan is now automated!!</h3>
+        </div>
+        <div class = "fan-auto" style = "padding-top: 10px">
+                <a class = "btn btn-light btn-lg btn-outline-dark" role = "button" href = "/fan" style = "bg-color: #ffff;">Automation Status: {{auto_fan}}</a>
+        </div>
+        </section>
+	<hr>
+	<section class = "bg-dark" id = "button1">
+        <div class = "row" style = "padding-bottom: 20px">
+                <div class = "col">
+                        <h3>To automate fan and lights at once :</h3>
+                </div>
+
+                <div class = "all-auto" style = "padding-top: 10px">
+                        <a class = "btn btn-light btn-lg btn-outline-dark" role = "button" href = "/all_auto" style = "bg-color: #ffff;">Automation Status:{{Auto_stat_all}}</a>
+                </div>
+        <section>
+
+	<div class="bottom-container" style = "text-align: center;">
+		<a class="footer-link" href="https://www.linkedin.com/in/pratic-chakraborty-5423091a8">LinkedIn</a>
+		<a class="footer-link" href="https://www.youtube.com/channel/UCfNg4zvEyCve2AkVfFZTQhg">Youtube</a>
+		<a class="footer-link" href="https://pratic2001.github.io/CV-Website/">Website</a>
+		<p id = "copyright">© 2021 Pratic Chakraborty.</p>
+		<h2>Feel free, to get lazy.</h2>
+	</div>
+  </body>
+</html>
